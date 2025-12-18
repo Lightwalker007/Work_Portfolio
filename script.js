@@ -24,26 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Simple Form Submission Logic
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const submitBtn = contactForm.querySelector('button');
-            const originalText = submitBtn.innerText;
-            
-            submitBtn.innerText = 'TRANSMITTING...';
-            submitBtn.disabled = true;
 
-            // Simulate network delay
-            setTimeout(() => {
-                alert('Message Transmitted. System response: SUCCESS.');
-                submitBtn.innerText = originalText;
-                submitBtn.disabled = false;
-                contactForm.reset();
-            }, 1500);
-        });
-    }
 
     // Scroll reveal/sticky header effect
     let lastScroll = 0;
