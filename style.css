@@ -476,6 +476,11 @@ footer {
         text-align: center;
     }
 
+    .pathways .container {
+        padding: 0 1rem;
+        overflow-x: hidden;
+    }
+
     .contact-strip {
         display: flex;
         flex-wrap: wrap;
@@ -562,5 +567,40 @@ footer {
 
     .timeline-step:hover .step-card {
         transform: none;
+    }
+
+    /* Pathway Details Mobile Fixes */
+    .panel-grid {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+        gap: 2rem;
+    }
+
+    .panel-stats {
+        border-left: none;
+        border-top: 1px solid var(--border);
+        padding-left: 0;
+        padding-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 1rem;
+        text-align: left;
+    }
+
+    .stat-card {
+        padding: 0.5rem 0;
+    }
+
+    .stat-value {
+        font-size: 1.5rem;
+        line-height: 1.1;
+    }
+
+    .stat-label {
+        font-size: 0.7rem;
+        letter-spacing: normal;
+        white-space: normal;
+        /* Allow wrapping */
+        display: block;
     }
 }
