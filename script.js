@@ -1,30 +1,37 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const tabBtns = document.querySelectorAll('.tab-btn');
-    const tabPanels = document.querySelectorAll('.tab-panel');
+    // New Pathway Logic
+    const pathBtns = document.querySelectorAll('.path-btn');
+    const pathTimelines = document.querySelectorAll('.pathway-timeline');
 
-    tabBtns.forEach(btn => {
+    pathBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-            const targetTab = btn.getAttribute('data-tab');
+            const targetPath = btn.getAttribute('data-path');
 
             // Update buttons
-            tabBtns.forEach(b => {
+            pathBtns.forEach(b => {
                 b.classList.remove('active');
                 b.setAttribute('aria-selected', 'false');
             });
             btn.classList.add('active');
             btn.setAttribute('aria-selected', 'true');
 
-            // Update panels
-            tabPanels.forEach(panel => {
-                panel.classList.remove('active');
-                if (panel.id === targetTab) {
-                    panel.classList.add('active');
+            // Update timelines
+            pathTimelines.forEach(timeline => {
+                timeline.classList.remove('active');
+                if (timeline.id === targetPath) {
+                    timeline.classList.add('active');
+                    
+                    // Reset animations for replay
+                    const steps = timeline.querySelectorAll('.timeline-step');
+                    steps.forEach(step => {
+                        step.style.animation = 'none';
+                        step.offsetHeight; /* Trigger reflow */
+                        step.style.animation = null; 
+                    });
                 }
             });
         });
     });
-
-
 
     // Scroll reveal/sticky header effect
     let lastScroll = 0;

@@ -54,124 +54,169 @@
             </div>
         </section>
 
-        <section class="trajectory-tabs">
+        <section class="pathways" id="pathways">
             <div class="container">
-                <div class="tab-controls" role="tablist">
-                    <button class="tab-btn active" data-tab="coo" role="tab" aria-selected="true">
-                        <span class="tab-code">01</span>
-                        <span class="tab-label">COO PATH</span>
-                        <span class="tab-desc">Operations & Efficiency</span>
+                <div class="section-header">
+                    <h3>Strategic Pathways</h3>
+                    <p>Select a trajectory to visualize the career progression.</p>
+                </div>
+
+                <div class="pathway-controls" role="tablist">
+                    <button class="path-btn active" data-path="operations" role="tab" aria-selected="true">
+                        Operations
                     </button>
-                    <button class="tab-btn" data-tab="cmo" role="tab" aria-selected="false">
-                        <span class="tab-code">02</span>
-                        <span class="tab-label">CMO PATH</span>
-                        <span class="tab-desc">Creative Strategy</span>
+                    <button class="path-btn" data-path="marketing" role="tab" aria-selected="false">
+                        Marketing
                     </button>
-                    <button class="tab-btn" data-tab="cio" role="tab" aria-selected="false">
-                        <span class="tab-code">03</span>
-                        <span class="tab-label">CIO PATH</span>
-                        <span class="tab-desc">Digital Automation</span>
+                    <button class="path-btn" data-path="digital" role="tab" aria-selected="false">
+                        Digital Information
                     </button>
                 </div>
 
-                <div class="tab-content-container">
-                    <!-- COO Content -->
-                    <div class="tab-panel active" id="coo" role="tabpanel">
-                        <div class="panel-grid">
-                            <div class="panel-info">
-                                <h3>Operations & Efficiency Specialist</h3>
-                                <p class="lead">Focus: Hardening Systems and Continuous Process Improvement.</p>
-                                <ul class="feature-list">
-                                    <li><strong>Strategic Oversight:</strong> Managed risk and budgets valued at over
-                                        $5M with 100% audit success.</li>
-                                    <li><strong>Team Leadership:</strong> Directed daily operations for teams of 70+
-                                        individuals in emergency response and high-pressure environments.</li>
-                                    <li><strong>Lean Excellence:</strong> IASSC Lean Six Sigma Green Belt (LSSGB)
-                                        certified, focusing on eliminating waste and optimizing throughput.</li>
-                                    <li><strong>Project Governance:</strong> PMP & PMI-ACP certified, ensuring rigorous
-                                        adherence to global project management standards.</li>
-                                </ul>
+                <div class="pathway-display-container">
+                    <!-- Operations Path -->
+                    <div class="pathway-timeline active" id="operations" role="tabpanel">
+                        <div class="path-intro">
+                            <h4>The COO Path (Operations & Efficiency)</h4>
+                            <p>Leverage your PMP, Lean Six Sigma Green Belt, and experience managing $5M+ budgets to
+                                climb through operations management.</p>
+                        </div>
+                        <div class="timeline-track">
+                            <div class="timeline-step">
+                                <span class="step-marker"></span>
+                                <div class="step-card">
+                                    <h5>Operations Project Manager</h5>
+                                    <p>Focus on managing specific high-impact internal projects and resource allocation.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="panel-stats">
-                                <div class="stat-card">
-                                    <span class="stat-value">$5M+</span>
-                                    <span class="stat-label">Budget Managed</span>
+                            <div class="timeline-step">
+                                <span class="step-marker"></span>
+                                <div class="step-card">
+                                    <h5>Senior Operations Manager</h5>
+                                    <p>Oversee multiple operational teams, likely managing the 70+ person scale handling
+                                        emergency response.</p>
                                 </div>
-                                <div class="stat-card">
-                                    <span class="stat-value">70+</span>
-                                    <span class="stat-label">Person Teams</span>
+                            </div>
+                            <div class="timeline-step">
+                                <span class="step-marker"></span>
+                                <div class="step-card">
+                                    <h5>Operations Director</h5>
+                                    <p>Move from managing "tasks" to "people who manage tasks," setting standards for
+                                        excellence.</p>
                                 </div>
-                                <div class="stat-card">
-                                    <span class="stat-value">0</span>
-                                    <span class="stat-label">Audit Losses</span>
+                            </div>
+                            <div class="timeline-step">
+                                <span class="step-marker"></span>
+                                <div class="step-card">
+                                    <h5>Sr. Director of Operations</h5>
+                                    <p>Take on full P&L responsibility for a specific region or division.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step end-goal">
+                                <span class="step-marker">VP</span>
+                                <div class="step-card">
+                                    <h5>VP of Operations</h5>
+                                    <p>Strategic leader responsible for total operational health and systemic
+                                        compliance.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- CMO Content -->
-                    <div class="tab-panel" id="cmo" role="tabpanel">
-                        <div class="panel-grid">
-                            <div class="panel-info">
-                                <h3>Creative Strategy & Public Affairs</h3>
-                                <p class="lead">Focus: Impactful Multimedia and Stakeholder Engagement.</p>
-                                <ul class="feature-list">
-                                    <li><strong>Media Production:</strong> Produced 200+ photo and video resources
-                                        driving corporate marketing and advertisement.</li>
-                                    <li><strong>Public Affairs:</strong> Served as Indo-Pacific Command PAO, publishing
-                                        content for increased morale and organizational connection.</li>
-                                    <li><strong>Brand Identity:</strong> Created custom animated logos and visual assets
-                                        for high-stakes presentations.</li>
-                                    <li><strong>Podcast Production:</strong> Spearheaded corporate podcasting to
-                                        increase market attraction and build strategic relationships.</li>
-                                </ul>
+                    <!-- Marketing Path -->
+                    <div class="pathway-timeline" id="marketing" role="tabpanel">
+                        <div class="path-intro">
+                            <h4>The CMO Path (Creative Strategy & Public Affairs)</h4>
+                            <p>Leverage your Public Affairs Officer background and multimedia design expertise to lead
+                                brand strategy.</p>
+                        </div>
+                        <div class="timeline-track">
+                            <div class="timeline-step">
+                                <span class="step-marker"></span>
+                                <div class="step-card">
+                                    <h5>Marketing Project Manager</h5>
+                                    <p>Lead specific creative campaigns, utilizing Adobe/Affinity skills for
+                                        high-quality content delivery.</p>
+                                </div>
                             </div>
-                            <div class="panel-stats">
-                                <div class="stat-card">
-                                    <span class="stat-value">200+</span>
-                                    <span class="stat-label">Media Resources</span>
+                            <div class="timeline-step">
+                                <span class="step-marker"></span>
+                                <div class="step-card">
+                                    <h5>Creative Operations Manager</h5>
+                                    <p>Standardize the "creative assembly line," ensuring media production is lean and
+                                        efficient.</p>
                                 </div>
-                                <div class="stat-card">
-                                    <span class="stat-value">1000+</span>
-                                    <span class="stat-label">Students Trained</span>
+                            </div>
+                            <div class="timeline-step">
+                                <span class="step-marker"></span>
+                                <div class="step-card">
+                                    <h5>Director of MOps</h5>
+                                    <p>Oversee the technology and proccesses behind marketing, aligning them with
+                                        business goals.</p>
                                 </div>
-                                <div class="stat-card">
-                                    <span class="stat-value">95%</span>
-                                    <span class="stat-label">Approval Rating</span>
+                            </div>
+                            <div class="timeline-step">
+                                <span class="step-marker"></span>
+                                <div class="step-card">
+                                    <h5>Sr. Director of Brand</h5>
+                                    <p>Manage global brand positioning and high-level stakeholder engagement.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step end-goal">
+                                <span class="step-marker">VP</span>
+                                <div class="step-card">
+                                    <h5>VP of Marketing</h5>
+                                    <p>The final step before CMO, owning end-to-end revenue and brand architecture.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- CIO Content -->
-                    <div class="tab-panel" id="cio" role="tabpanel">
-                        <div class="panel-grid">
-                            <div class="panel-info">
-                                <h3>Digital Operations & Automation</h3>
-                                <p class="lead">Focus: Digital Transformation and Systems Implementation.</p>
-                                <ul class="feature-list">
-                                    <li><strong>Digital Transformation:</strong> Leading automation initiatives for the
-                                        Compassion Project to streamline organizational workflow.</li>
-                                    <li><strong>System Integration:</strong> Mastered ServiceNow, Asana, and M365
-                                        ecosystems to bridge communication gaps.</li>
-                                    <li><strong>Process Digitization:</strong> Replaced legacy tracking with MS Excel
-                                        and automated tools, increasing compliance by 20%.</li>
-                                    <li><strong>Agile Implementation:</strong> Leveraging Scrum/Kanban to manage digital
-                                        record-keeping and rapid software deployment cycles.</li>
-                                </ul>
+                    <!-- Digital Path -->
+                    <div class="pathway-timeline" id="digital" role="tabpanel">
+                        <div class="path-intro">
+                            <h4>The CIO Path (Digital Operations & Automation)</h4>
+                            <p>Leverage your work in digital operations, automation, and systems like ServiceNow to lead
+                                technical strategy.</p>
+                        </div>
+                        <div class="timeline-track">
+                            <div class="timeline-step">
+                                <span class="step-marker"></span>
+                                <div class="step-card">
+                                    <h5>IT Project Manager</h5>
+                                    <p>Direct digital transformation projects, such as current automation work.</p>
+                                </div>
                             </div>
-                            <div class="panel-stats">
-                                <div class="stat-card">
-                                    <span class="stat-value">20%</span>
-                                    <span class="stat-label">Compliance Lift</span>
+                            <div class="timeline-step">
+                                <span class="step-marker"></span>
+                                <div class="step-card">
+                                    <h5>Info Systems Manager</h5>
+                                    <p>Oversee the integrity and security of the organization's data and record-keeping
+                                        systems.</p>
                                 </div>
-                                <div class="stat-card">
-                                    <span class="stat-value">3K+</span>
-                                    <span class="stat-label">Employees Supported</span>
+                            </div>
+                            <div class="timeline-step">
+                                <span class="step-marker"></span>
+                                <div class="step-card">
+                                    <h5>IT Director</h5>
+                                    <p>Lead the entire IT division, managing managers while aligning technology with
+                                        business impact.</p>
                                 </div>
-                                <div class="stat-card">
-                                    <span class="stat-value">Auto</span>
-                                    <span class="stat-label">Workflow Driven</span>
+                            </div>
+                            <div class="timeline-step">
+                                <span class="step-marker"></span>
+                                <div class="step-card">
+                                    <h5>Sr. Director of Tech Strategy</h5>
+                                    <p>Balance new technology adoption with legacy systems and budget constraints.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step end-goal">
+                                <span class="step-marker">VP</span>
+                                <div class="step-card">
+                                    <h5>VP of Information Technology</h5>
+                                    <p>Primary architect of the company’s technology governance and security framework.
+                                    </p>
                                 </div>
                             </div>
                         </div>
